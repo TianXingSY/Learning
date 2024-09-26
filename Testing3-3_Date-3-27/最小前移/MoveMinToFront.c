@@ -11,7 +11,7 @@ int main(){
     Elemtype min;
     int i=0;
     InitList(&L);
-    CreateFromTailWithoutInput(L);
+    CreateFromTail(L);
     bianli(L);
     r=L->next;
     min=r->data;

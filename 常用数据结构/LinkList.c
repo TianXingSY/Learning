@@ -55,7 +55,7 @@ int CreateFromTail(LinkList L){
     while(flag){
         printf("ÇëÊäÈë£º");
         scanf("%d",&c);
-        if(c!=-0.5){
+        if(c>0){
             s=(Node*)malloc(sizeof(Node));
             s->data=c;
             r->next=s;

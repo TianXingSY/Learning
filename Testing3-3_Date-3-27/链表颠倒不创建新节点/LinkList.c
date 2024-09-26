@@ -53,9 +53,9 @@ int CreateFromTail(LinkList L){
     r=L;
     Elemtype c;
     while(flag){
-        printf("请输入：");
+        printf("请输入（输入小于0的数以结束输入）：");
         scanf("%d",&c);
-        if(c!=-0.5){
+        if(c>0){
             s=(Node*)malloc(sizeof(Node));
             s->data=c;
             r->next=s;

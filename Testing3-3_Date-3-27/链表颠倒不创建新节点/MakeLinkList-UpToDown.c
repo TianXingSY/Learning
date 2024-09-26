@@ -6,15 +6,16 @@
 int main() {
     LinkList L,s,z;
     InitList(&L);
-    CreateFromTailWithoutInput(L);
+    CreateFromTail(L);
     bianli(L);
     z=L->next->next;
+    s=z;
     L->next->next=NULL;
     while(z){
-        s=z;
         z=z->next;
         s->next=L->next;
         L->next=s;
+        s=z;
     }
     bianli(L);
 }

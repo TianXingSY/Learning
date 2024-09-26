@@ -11,9 +11,11 @@ int main(){
     LinkStack P;
     InitStack(&P);
     L.last=-1;
-    int i,temple[SIZE] = {1,2,3,4,5,6,7,8,9,10};
+    int i,inp;
     for(i = 0;i < SIZE;i++){
-        L.data[++L.last] = temple[i];
+        printf("请输入第%d个元素：",i+1);
+        scanf("%d",&inp);
+        L.data[++L.last] = inp;
     }
     Elemtype e;
     while (L.last > -1){
